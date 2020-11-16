@@ -1,0 +1,18 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+commonLabels:
+  cluster: eu
+resources:
+- ../../variant/production
+
+patches:
+- patch: |-
+    - op: replace
+      path: /spec/resourceID
+      value: resourceID/production-eu
+    - op: replace
+      path: /spec/clientID
+      value: clientID/production-eu
+  target:
+    kind: AzureIdentity

@@ -1,0 +1,18 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: the-app
+  namespace: default
+spec:
+  interval: 5m
+  url: https://github.com/stefanprodan/podinfo
+  ref:
+    tag: <The deployment tag>
+  ignore: |
+    # exclude all
+    /*
+    # include deploy dir
+    !/deploy/the-app/base
+    # exclude file extensions from deploy dir
+    /deploy/**/*.md
+    /deploy/**/*.txt
