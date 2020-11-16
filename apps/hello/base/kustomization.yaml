@@ -1,0 +1,20 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: bws
+
+# Base should contain the latest stable (what should be run in prod)
+images:
+  - name: monopole/hello
+    newTag: "1"
+
+# Use a generator for adding suffixes so that objects referencing this map is updated
+configMapGenerator:
+  - name: hello-map
+    literals:
+      - altGreeting=Good Morning!
+      - enableRisky="false"
+
+resources:
+- deployment.yaml
+- service.yaml
