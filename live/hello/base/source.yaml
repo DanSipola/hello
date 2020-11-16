@@ -1,0 +1,16 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: hello
+  namespace: flux-system
+spec:
+  interval: 30s
+  ref:
+    tag: deploy/hello/v1
+  url: https://github.com/DanSipola/hello
+  ignore: |
+    /*
+    !/apps/hello
+    /apps/hello/**/*.md
+    /apps/hello/**/*.txt

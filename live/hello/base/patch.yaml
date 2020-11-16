@@ -1,0 +1,18 @@
+# Copy this patch and edit the values
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: hello
+  namespace: flux-system
+spec:
+  ref:
+    tag: "the-version"
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+kind: Kustomization
+metadata:
+  name: hello
+  namespace: flux-system
+spec:
+  path: ./apps/hello/overlays/clusters/<the-cluster>/namespaces/<the-namespace>
