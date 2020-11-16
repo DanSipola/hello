@@ -39,3 +39,5 @@ Then:
 1. hotfix production: hotfix/v2/1
 1. merge hotfix/v2/1 to main
 1. deploy production deploy/v3 (hotfix is gone)
+
+Might be solved if keeping namespace/cluster configurations on the main branch in the live-directory...?
