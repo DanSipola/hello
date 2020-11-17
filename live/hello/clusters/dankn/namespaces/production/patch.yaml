@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   ref:
-    tag: deploy/hello/v6
+    tag: deploy/hello/v7
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
 kind: Kustomization
