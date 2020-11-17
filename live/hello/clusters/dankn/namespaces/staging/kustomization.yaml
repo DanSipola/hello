@@ -9,3 +9,7 @@ resources:
 patchesStrategicMerge:
   - patch.yaml
 
+patches:
+- path: trackmain.yaml
+  target:
+    kind: GitRepository
