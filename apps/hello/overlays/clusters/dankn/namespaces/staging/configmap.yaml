@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: hello-map
 data:
-  altGreeting: "Hello from staging main!"
+  altGreeting: "Hello from staging!"
