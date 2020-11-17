@@ -3,4 +3,3 @@ kind: Kustomization
 resources:
 - ../../hello/clusters/dankn/namespaces/production
 - ../../hello/clusters/dankn/namespaces/staging
-- ../../hello/clusters/dankn/namespaces/dankn
