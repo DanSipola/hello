@@ -1,0 +1,7 @@
+nameReferences:
+- kind: GitRepository
+  apiVersion: source.toolkit.fluxcd.io/v1beta1
+  fieldSpecs:
+    - kind: Kustomization
+      apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+      path: spec/sourceRef/name

@@ -11,5 +11,5 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: $(HELLO_GIT_REPOSITORY)
+    name: hello
   validation: client

@@ -4,16 +4,7 @@ kind: Kustomization
 namespace: flux
 
 configurations:
-  - references.yaml
-
-vars:
-  - name: HELLO_GIT_REPOSITORY
-    objref:
-      kind: GitRepository
-      name: hello
-      apiVersion: source.toolkit.fluxcd.io/v1beta1
-    fieldref:
-      fieldpath: metadata.name
+- namereferences.yaml
 
 resources:
   - kustomization-crd.yaml
