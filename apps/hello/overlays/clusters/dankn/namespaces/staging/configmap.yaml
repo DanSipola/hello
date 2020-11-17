@@ -3,4 +3,4 @@ kind: ConfigMap
 metadata:
   name: hello-map
 data:
-  altGreeting: "Hello from cluster dankn namespace staging!"
+  altGreeting: "Hello from staging main!"
