@@ -3,7 +3,7 @@ kind: Kustomization
 
 images:
   - name: monopole/hello
-    newTag: "1"
+    newTag: "2"
 
 commonLabels:
   variant: staging
