@@ -6,7 +6,7 @@ namespace: bws
 # Base should contain the latest stable (what should be run in prod)
 images:
   - name: monopole/hello
-    newTag: "1"
+    newTag: "2"
 
 # Use a generator for adding suffixes so that objects referencing this map is updated
 configMapGenerator:
